@@ -39,6 +39,7 @@ var qdiv = document.querySelector("#qdiv");
 var wrapper = document.querySelector("#wrapper");
 
 var timeLeft = 75;
+//added penalty for wrong answers
 var penalty = 10;
 
 // Creates new element
