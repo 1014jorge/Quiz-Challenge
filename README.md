@@ -10,7 +10,9 @@ WHEN all questions are answered or the timer reaches 0
 THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
+# Repo Link
 
+https://github.com/1014jorge/Quiz-Challenge
 
 # Screenshot 
 Added screenshot of quiz start page and high score page.
