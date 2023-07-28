@@ -39,6 +39,7 @@ var qdiv = document.querySelector("#qdiv");
 var wrapper = document.querySelector("#wrapper");
 
 var timeLeft = 75;
+var penalty = 10;
 
 // Creates new element
 var ulCreate = document.createElement("ul");
@@ -94,6 +95,7 @@ function compare(event) {
 
         } else {
             //condition if incorrect answer
+            timeLeft = timeLeft - penalty;
             createDiv.textContent = "Wrong! The correct answer is:  " + questions[questionIndex].answer;
         }
 
