@@ -1,15 +1,35 @@
+<!--html document type, header, link to css file and website title-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <!-- This is the first step in making the document responsive but scaling the items to screen -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- This is the style links -->
     <link rel="stylesheet" type="text/css" href="assets/style.css">
-<script src="assets/script.js"></script>
-    <!-- This is the title-->
-    <title>Code Quiz</title>
+    <title>JavaScript Coding Quiz</title>
 </head>
+
+
+<body>
+    <!-- created second html for link to high scores, divs for wrapper,timer and quiz content and buttons. -->
+    <a href="index2.html">View Highscores</a>
+    <div id="wrapper">
+        <div id="currentTime"></div>
+        <div id="qdiv">
+            <h1>JavaScript Coding Quiz</h1>
+            <h2>Answer the following code-related questions within the time limit.
+            </h2>
+            <ul id="choicesUl"></ul>
+            <button id="startTime">Start</button>
+        </div>
+
+    </div>
+<!--link to javascript file-->
+    <script src="assets/script.js"></script>
+
+
+
+</body>
+
+</html>
