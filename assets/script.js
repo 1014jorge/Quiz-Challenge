@@ -13,7 +13,7 @@ var questions = [
     {
         title: "Which function is used to serialize an object into a JSON string in Javascript?",
         choices: ["parse()", "stringify()", "convert()", "Vorhees"],
-        answer: "stringify"
+        answer: "stringify()"
     },
     {
         title: "String values must be enclosed within ____ when being assigned to variables.",
@@ -42,7 +42,7 @@ var timeLeft = 75;
 //added penalty for wrong answers
 var penalty = 10;
 
-// Creates new element
+// creates new element
 var ulCreate = document.createElement("ul");
 
 var holdInterval;
@@ -62,10 +62,10 @@ timer.addEventListener("click", function () {
 });
 
 function render(questionIndex) {
-    // Clears existing data 
     qdiv.innerHTML = "";
     ulCreate.innerHTML = "";
-    // For loops to loop through all info in array
+    // For loops for cycling questions
+
     for (var i = 0; i < questions.length; i++) {
 
         var userq = questions[questionIndex].title;
@@ -81,7 +81,7 @@ function render(questionIndex) {
         listItem.addEventListener("click", (compare));
     })
 }
-
+//complete function for quiz choices and scoring
 function compare(event) {
     var element = event.target;
 
@@ -133,9 +133,9 @@ function complete() {
 
     qdiv.appendChild(createP);
 
-
+//if for final score and timing
     if (timeLeft >= 0) {
-        var timeRemaining = timeLeft;
+       
         var createP2 = document.createElement("p");
         clearInterval(holdInterval);
         createP.textContent = "Your final score is: " + Math.round((score / questions.length) * 100);
